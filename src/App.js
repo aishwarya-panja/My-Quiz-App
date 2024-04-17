@@ -1,5 +1,5 @@
 import './App.css';
-import React, {useState, useContext} from 'react';
+import React, {useState} from 'react';
 import MainMenu from './Components/MainMenu';
 import Quiz from './Components/Quiz';
 import { QuizContext } from './Helpers/Contexts';
@@ -12,7 +12,7 @@ function App() {
 
   return (
     <div className="App">
-     <h1> Quiz App</h1>
+     <h1 className='title'> Quiz App</h1>
 
      <QuizContext.Provider //wrapper class - globally declares the States
      value={{gameState, setGameState, score, setScore}}>
